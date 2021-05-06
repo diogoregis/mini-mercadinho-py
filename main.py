@@ -1,10 +1,40 @@
-lista = list(range(30))
+from typing import List, Dict
+from time import sleep
 
-print(lista)
-print(len(lista))
+from models.produto import Produto
+from utils.helper import formata_float_str_moeda
 
-for num in lista:
-    lista[num] = 2*num
+produtos: List[Produto] = []
+carrinho: List[Dict[Produto, int]] = []
 
-print(lista)
-print(len(lista))
+
+# Funções
+
+def main() -> None:
+    menu()
+
+def menu() -> None:
+    pass
+
+def cadastrar_produto() -> None:
+    pass
+
+def listar_produtos() -> None:
+    pass
+
+def comprar_produto() -> None:
+    pass
+
+def visualizar_carrinho() -> None:
+    pass
+
+def fechar_pedido() -> None:
+    pass
+
+def pega_produto_por_codigo(codigo: int) -> None:
+    pass
+
+if __name__ == '__main__':
+    main()
+
+
